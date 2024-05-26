@@ -26,7 +26,7 @@ const Index = () => {
         <Text fontSize="2xl" fontWeight="bold">Note Taking App</Text>
         <Input placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
         <Textarea placeholder="Content" value={content} onChange={(e) => setContent(e.target.value)} />
-        <Button colorScheme="teal" onClick={addNote}>Add Note</Button>
+        <Button colorScheme="red" onClick={addNote}>Add Note</Button>
         <VStack spacing={4} width="100%">
           {notes.map((note, index) => (
             <Box key={index} p={4} borderWidth="1px" borderRadius="md" width="100%">
